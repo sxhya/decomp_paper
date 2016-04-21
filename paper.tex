@@ -135,6 +135,46 @@ The authors of the present paper acknowledges financial support from Russian Sci
 
 \section {Preliminaries}\label{prelim}
 
+\section{Computations}
+\begin{lemma}\label{lemma:e6-d5}
+Let $R$ be a commutative ring with $\asr(R)\leqslant 4$. Then $\G(\rE_6, R)$ equals the product of 5 of its subgroups isomorphic to $\G(\rD_5, R)$.
+\end{lemma}
+\begin{proof}
+By Dennis---Vaserstein decomposition one has
+\[ \G(\rE_6) = \G(\Delta_1)\U(\Sigma_1)\U(\Sigma_1^-\cap\Sigma_6^-)\U(\Sigma_6)\G(\Delta_6). \]
+We divide $\Sigma_1$ into two parts: $\Sigma_1=(\Sigma_1\cap\Delta_6)\cup(\Sigma_1\cap\Sigma_6)$. The set $\Sigma_1\cap\Sigma_6$ lies inside the $\rD_5$-subsystem spanned by $\alpha_3$, $\alpha_4$, $\alpha_5$, $\alpha_2$ and $\alpha_{\max}$. Thus we can rewrite
+\begin{multline*}
+\G(\rE_6) = \G(\Delta_1) \U(\Sigma_1) \U(\Sigma_1^-\cap\Sigma_6^-) \U(\Sigma_6) \G(\Delta_6) = \\
+= \G(\Delta_1) \U(\Sigma_1\cap\Delta_6) \U(\Sigma_1\cap\Sigma_6) \U(\Sigma_1^-\cap\Sigma_6^-) \U(\Sigma_1\cap\Sigma_6) \U(\Sigma_6\cap\Delta_1) \G(\Delta_6) \subseteq \\
+\subseteq \G(\Delta_1) \G(\Delta_6) \G(\langle\alpha_3, \alpha_4, \alpha_5, \alpha_2, \alpha_{\max}\rangle) \G(\Delta_1) \G(\Delta_6).\qedhere
+\end{multline*}
+\end{proof}
+
+\begin{lemma}
+Let $R$ be a commutative ring with $\sr(R)\leqslant3$. Then $\G(\rE_7, R)$ equals the product of 16 of its subgroups isomorphic to $\G(\rD_6, R)$ or $\G(\rA_7, R)$.
+\end{lemma}
+\begin{proof}
+We start with the following Dennis---Vaserstein decomposition (yet unpublished):
+\[ \G(\rE_7) = \G(\Delta_1) \U(\Sigma_1) \U(\Sigma_1^-\cap\Sigma_2^-) \U(\Sigma_2) \G(\Delta_2). \]
+We divide the unipotents sets of roots as follows
+\begin{align*}
+& \U(\Sigma_1) = \U(\Sigma_1\cap\Delta_2) \U(\Sigma_1\cap\Sigma_2), \\
+& \U(\Sigma_2) = \U(\Sigma_2\cap\Sigma_1) \U(\Sigma_2\cap\Delta_1), \\
+& \U(\Sigma_1\cap\Sigma_2) = \U(\Sigma_1\cap\Sigma_2^{=1}) \U(\Sigma_1\cap\Sigma_2^{=2}).
+\end{align*}
+The set of roots $\Sigma_1\cap\Sigma_2^{=2}$ lies inside the obvious $\rA_7$-subsystem. The set $\Sigma_1\cap\Sigma_2^{=1}$ spans the $\rE_6$-subsystem. Damn!
+
+Thus
+\begin{align*}
+\G(\rE_7) ={} & \G(\Delta_1) \U(\Sigma_1\cap\Delta_2) \U(\Sigma_1\cap\Sigma_2^{=2}) \cdot{} \\
+& \cdot \U(\Sigma_1\cap\Sigma_2^{=1}) \U(\Sigma_1^-\cap\Sigma^{=-1}) \cdot{} \\
+& \cdot \U(\Sigma_1^-\cap\Sigma_2^{=-2}) \U(\Sigma_1\cap\Sigma_2^{=2}) \cdot{} \\
+& \cdot \U(\Sigma_1\cap\Sigma_2^{=1}) \U(\Sigma_2\cap\Delta_1) \G(\Delta_2) = \\
+={} & \G(\Delta_1) \G(\Delta_2) \G(\rA_7) \G(\rE_6) \G(\rA_7) \U(\Sigma_1\cap\Sigma_2^{=1}) \G(\Delta_1) \G(\Delta_2).
+\end{align*}
+By \cref{lemma:e6-d5} one decomposes each $\rE_6$-factor into the product of 5 $\rD_5$-subgroups, so in total one gets the product of 16 classical factors.
+\end{proof}
+Perhaps we should further divide $\Sigma_1\cap\Sigma_2^{=1}$ to obtain a shorter decomposition.
 \printbibliography
 
 \end{document}
