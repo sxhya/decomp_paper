@@ -150,7 +150,7 @@ We divide $\Sigma_1$ into two parts: $\Sigma_1=(\Sigma_1\cap\Delta_6)\cup(\Sigma
 \end{multline*}
 \end{proof}
 
-\begin{lemma}
+\begin{lemma}\label{lemma:e7-aldl}
 Let $R$ be a commutative ring with $\sr(R)\leqslant3$. Then $\G(\rE_7, R)$ equals the product of 16 of its subgroups isomorphic to $\G(\rD_6, R)$ or $\G(\rA_7, R)$.
 \end{lemma}
 \begin{proof}
@@ -174,7 +174,17 @@ Thus
 \end{align*}
 By \cref{lemma:e6-d5} one decomposes each $\rE_6$-factor into the product of 5 $\rD_5$-subgroups, so in total one gets the product of 16 classical factors.
 \end{proof}
-Perhaps we should further divide $\Sigma_1\cap\Sigma_2^{=1}$ to obtain a shorter decomposition.
+Perhaps we should further divide $\Sigma_1\cap\Sigma_2^{=1}$ to obtain a shorter decomposition. For example,
+\[ \Sigma = \Sigma_1\cap\Sigma_2^{=1} = (\Sigma\cap\Delta_7) \cup (\Sigma\cap\Sigma_7). \]
+$\Sigma\cap\Delta_7$ lies inside the third obviuos $\rD_6$-subsustem of $\rE_6$ (the one visible on the extended Dynkin diagram). $\Sigma\cap\Sigma_7$ lies, apparently, in a $\rD_5$-subsystem (on we should locate explicitly). Thus the decomposition in \cref{lemma:e7-aldl} transforms into
+\begin{align*}
+\G(\rE_7) ={} & \G(\Delta_1) \U(\Sigma_1\cap\Delta_2) \U(\Sigma_1\cap\Sigma_2^{=2}) \cdot{} \\
+& \cdot \U(\Sigma\cap\Delta_7) \U(\Sigma\cap\Sigma_7) \U(\Sigma^-\cap\Sigma_7^-) \U(\Sigma^-\cap\Delta_7) \cdot{} \\
+& \cdot \U(\Sigma_1^-\cap\Sigma_2^{=-2}) \U(\Sigma_1\cap\Sigma_2^{=2}) \cdot{} \\
+& \cdot \U(\Sigma\cap\Delta_7) \U(\Sigma\cap\Sigma_7) \U(\Sigma_2\cap\Delta_1) \G(\Delta_2) = \\
+={} & \G(\Delta_1) \G(\rA_7) \G(\rD_6) \G(\rD_5) \G(\rD_6) \G(\rA_7) \G(\rD_6) \G(\Delta_1) \G(\Delta_2).
+\end{align*}
+This is 9 factors! Wow!
 \printbibliography
 
 \end{document}
